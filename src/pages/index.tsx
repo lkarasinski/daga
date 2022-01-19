@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
-import HeroText from '../Components/Atoms/HeroText';
-import Header from '../Components/Organisms/Header';
+import HeroText from '../components/Atoms/HeroText';
+import Header from '../components/Organisms/Header';
 
 const Container = styled.div`
     max-width: 85rem;
