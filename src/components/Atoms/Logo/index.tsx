@@ -4,9 +4,6 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     max-width: 75rem;
-    margin: auto;
-    margin-top: 2rem;
-    position: absolute;
 `;
 
 const Logo: React.FC = () => {
