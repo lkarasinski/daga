@@ -1,11 +1,17 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
+import Heading from '../components/Atoms/Heading';
 import HeroText from '../components/Atoms/HeroText';
-import Header from '../components/Organisms/Header';
+import Logo from '../components/Atoms/Logo';
+import Paragraph from '../components/Atoms/Paragraph';
+import AboutUsPanel from '../components/Molecules/AboutUsPanel';
+import ContactPanel from '../components/Molecules/ContactPanel';
+import OurServicesPanel from '../components/Molecules/OurServicesPanel';
+import HeroPanel from '../components/Templates/HeroPanel';
 
-const Container = styled.div`
-    max-width: 85rem;
+const Content = styled.div`
+    max-width: 75rem;
     margin: 0 auto;
 `;
 
@@ -20,10 +26,12 @@ const Home: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Container>
-                <Header />
-                <HeroText />
-            </Container>
+            <HeroPanel />
+            <Content>
+                <AboutUsPanel />
+                <OurServicesPanel />
+            </Content>
+            <ContactPanel />
         </div>
     );
 };

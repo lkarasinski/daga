@@ -10,7 +10,7 @@ export default function Document() {
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 {/*  eslint-disable-next-line @next/next/no-page-custom-font*/}
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap"
                     rel="stylesheet"
                 />
             </Head>
