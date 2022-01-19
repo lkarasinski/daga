@@ -5,7 +5,7 @@ import Logo from '../../Atoms/Logo';
 
 const Wrapper = styled.div`
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/background.jpg');
+        url('/background-min.jpg');
     width: 100%;
     height: 70vh;
     background-size: cover;
