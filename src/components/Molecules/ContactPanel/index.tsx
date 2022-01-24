@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Heading from '../Atoms/Heading';
-import MaxWidth from '../Atoms/MaxWidth';
-import Paragraph from '../Atoms/Paragraph';
+import Heading from '../../Atoms/Heading';
+import MaxWidth from '../../Atoms/MaxWidth';
+import Paragraph from '../../Atoms/Paragraph';
 
 const Background = styled.div`
     margin-top: 2rem;

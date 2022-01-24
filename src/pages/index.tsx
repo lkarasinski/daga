@@ -1,11 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import styled from 'styled-components';
-import Heading from '../components/Atoms/Heading';
-import HeroText from '../components/Atoms/HeroText';
-import Logo from '../components/Atoms/Logo';
 import MaxWidth from '../components/Atoms/MaxWidth';
-import Paragraph from '../components/Atoms/Paragraph';
 import AboutUsPanel from '../components/Molecules/AboutUsPanel';
 import ContactPanel from '../components/Molecules/ContactPanel';
 import OurServicesPanel from '../components/Molecules/OurServicesPanel';
