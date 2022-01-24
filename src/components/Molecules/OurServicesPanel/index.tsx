@@ -11,7 +11,7 @@ const List = styled.ul`
 `;
 
 const Wrapper = styled.div`
-    margin: 2rem 0;
+    margin: 2rem 0 4rem;
 `;
 
 const OurServicesPanel: React.FC = () => {
