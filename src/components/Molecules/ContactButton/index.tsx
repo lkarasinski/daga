@@ -10,6 +10,7 @@ const Button = styled.button`
     font-size: 1rem;
     color: #292929;
     padding: 0.75rem 2rem;
+    cursor: pointer;
 `;
 
 const ContactButton: React.FC = () => {
