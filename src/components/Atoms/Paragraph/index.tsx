@@ -10,7 +10,7 @@ const Paragraph = styled.p<Props>`
     line-height: 26px;
     margin: 0.5rem 0;
 
-    color: ${({ black }) => (black ? '#000000' : '#ffffff')};
+    color: ${({ black }) => (black ? '#ffffff' : '#000000')};
 `;
 
 export default Paragraph;

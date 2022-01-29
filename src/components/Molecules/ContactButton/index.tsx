@@ -8,7 +8,7 @@ const Button = styled.button`
     border: none;
     font-weight: bold;
     font-size: 1rem;
-    color: #292929;
+    color: white;
     padding: 0.75rem 2rem;
     cursor: pointer;
 `;

@@ -6,7 +6,7 @@ import MaxWidth from '../../Atoms/MaxWidth';
 import ContactButton from '../../Molecules/ContactButton';
 
 const Wrapper = styled.div`
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
         url('/background-min.jpg');
     width: 100%;
     height: 70vh;

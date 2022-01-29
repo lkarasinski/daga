@@ -6,7 +6,7 @@ const List = styled.ul`
     font-size: 18px;
     line-height: 26px;
 
-    color: #ffffff;
+    color: #000000;
     margin-left: 1.5rem;
 `;
 

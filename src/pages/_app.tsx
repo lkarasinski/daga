@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body{
-    background-color: #292929;
+    background-color: #ffffff;
     -webkit-font-smoothing: antialiased;
     font-family: 'Merriweather', sans-serif;
     font-weight: 400;

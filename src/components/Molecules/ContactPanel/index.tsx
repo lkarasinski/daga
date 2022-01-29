@@ -6,13 +6,14 @@ import Paragraph from '../../Atoms/Paragraph';
 
 const Background = styled.div`
     margin-top: 2rem;
-    background-color: #ffffff;
+    background-color: #313131;
     padding: 2rem 0;
-    color: #000000;
+    color: #fffffff;
 `;
 
 const Text = styled.h2`
     margin-bottom: 3rem;
+    color: #ffffff;
 `;
 const BottomBar = styled.div`
     width: 100%;
