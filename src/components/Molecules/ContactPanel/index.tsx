@@ -31,7 +31,7 @@ const Molecules: React.FC = () => {
                     <Paragraph black>Sławomir Kucharski DAGA</Paragraph>
                     <Paragraph black>ul. Zbożowa 14</Paragraph>
                     <Paragraph black>62-800 Kalisz</Paragraph>
-                    <Paragraph black>tel. 603 534 559</Paragraph>
+                    <Paragraph black>tel. 603 934 559</Paragraph>
                     <Paragraph black>email: ztsdaga@op.pl</Paragraph>
                 </MaxWidth>
             </Background>

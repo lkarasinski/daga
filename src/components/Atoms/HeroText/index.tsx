@@ -28,7 +28,7 @@ const HeroText: React.FC = () => {
         <Wrapper>
             <CompanyName>Daga</CompanyName>
             <CompanyDescription>
-                Producent tworzyw sztucznych
+                Dystrybutor tworzyw sztucznych
             </CompanyDescription>
         </Wrapper>
     );
