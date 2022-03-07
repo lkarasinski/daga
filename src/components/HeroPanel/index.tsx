@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroText from '../../Atoms/HeroText';
-import Logo from '../../Atoms/Logo';
-import MaxWidth from '../../Atoms/MaxWidth';
-import ContactButton from '../../Molecules/ContactButton';
+import HeroText from '../HeroText';
+import MaxWidth from '../../components-ui/MaxWidth';
+import ContactButton from '../../components-ui/ContactButton';
 
 const Wrapper = styled.div`
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
@@ -11,7 +10,7 @@ const Wrapper = styled.div`
     width: 100%;
     height: 70vh;
     background-size: cover;
-    color: #ffffff;
+    color: ${({ theme }) => theme.colors.background};
 
     overflow: hidden;
 
@@ -37,7 +36,7 @@ const Grid = styled.div`
 
 const TopContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     margin-top: 2rem;
     width: 100%;
@@ -49,7 +48,6 @@ const HeroPanel: React.FC = () => {
         <Wrapper>
             <MaxWidth>
                 <TopContainer>
-                    <Logo />
                     <ContactButton />
                 </TopContainer>
             </MaxWidth>

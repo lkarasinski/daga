@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Heading from '../../Atoms/Heading';
-import Paragraph from '../../Atoms/Paragraph';
+import Heading from '../../components-ui/Heading';
+import Paragraph from '../../components-ui/Paragraph';
 
 const Wrapper = styled.div`
     margin: 2rem 0;

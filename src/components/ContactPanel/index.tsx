@@ -1,24 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
-import Heading from '../../Atoms/Heading';
-import MaxWidth from '../../Atoms/MaxWidth';
-import Paragraph from '../../Atoms/Paragraph';
+import Heading from '../../components-ui/Heading';
+import MaxWidth from '../../components-ui/MaxWidth';
+import Paragraph from '../../components-ui/Paragraph';
 
 const Background = styled.div`
     margin-top: 2rem;
-    background-color: #313131;
+    background-color: ${({ theme }) => theme.colors.secondary};
     padding: 2rem 0;
-    color: #fffffff;
+    color: ${({ theme }) => theme.colors.background};
 `;
 
 const Text = styled.h2`
     margin-bottom: 3rem;
-    color: #ffffff;
+    color: ${({ theme }) => theme.colors.background};
 `;
 const BottomBar = styled.div`
     width: 100%;
     height: 1rem;
-    background-color: #e49700;
+    background-color: ${({ theme }) => theme.colors.primary};
 `;
 
 const Molecules: React.FC = () => {

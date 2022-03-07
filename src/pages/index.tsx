@@ -1,10 +1,10 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import MaxWidth from '../components/Atoms/MaxWidth';
-import AboutUsPanel from '../components/Molecules/AboutUsPanel';
-import ContactPanel from '../components/Molecules/ContactPanel';
-import OurServicesPanel from '../components/Molecules/OurServicesPanel';
-import HeroPanel from '../components/Templates/HeroPanel';
+import MaxWidth from '../components-ui/MaxWidth';
+import AboutUsPanel from '../components/AboutUsPanel';
+import ContactPanel from '../components/ContactPanel';
+import OurServicesPanel from '../components/OurServicesPanel';
+import HeroPanel from '../components/HeroPanel';
 
 const Home: NextPage = () => {
     return (

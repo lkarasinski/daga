@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Heading from '../../Atoms/Heading';
+import Heading from '../../components-ui/Heading';
 
 const List = styled.ul`
     font-size: 18px;
