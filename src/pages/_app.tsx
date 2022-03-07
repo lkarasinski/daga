@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app';
 import Script from 'next/script';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Theme from '../utils/theme';
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -9,9 +10,9 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body{
-    background-color: #ffffff;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Merriweather', sans-serif;
+    background-color: ${({ theme }) => theme.colors.background};
+    font-family: ${({ theme }) => theme.fonts.family.body};
     font-weight: 400;
   }
 `;
@@ -35,8 +36,10 @@ function MyApp({ Component, pageProps }: AppProps) {
             </Script>
             {/* GOOGLE ANALYTICS END*/}
 
-            <GlobalStyle />
-            <Component {...pageProps} />
+            <ThemeProvider theme={Theme}>
+                <GlobalStyle />
+                <Component {...pageProps} />
+            </ThemeProvider>
         </>
     );
 }
