@@ -1,11 +1,64 @@
 import React from 'react';
 import styled from 'styled-components';
+import ContactInfo from '../../components-ui/ContactInfo';
 import Heading from '../../components-ui/Heading';
 import MaxWidth from '../../components-ui/MaxWidth';
-import Paragraph from '../../components-ui/Paragraph';
+import {
+    faAddressBook,
+    faMapMarkerAlt,
+    faPhone,
+    faAt,
+} from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
+
+const Molecules: React.FC = () => {
+    return (
+        <>
+            <div
+                style={{
+                    width: '100%',
+                    height: '20vh',
+                    position: 'relative',
+
+                    marginTop: '100px',
+                }}
+            >
+                <Image
+                    src="/pasek.jpg"
+                    alt="Dekoracja"
+                    layout="fill"
+                    objectFit="cover"
+                />
+            </div>
+            <Background id="kontakt">
+                <MaxWidth>
+                    <Heading>Kontakt</Heading>
+                    <Text>Masz pytania? Skontaktuj się z nami!</Text>
+                    <Grid>
+                        <ContactInfo
+                            text={'Sławomir Kucharski Daga'}
+                            icon={faAddressBook}
+                        />
+                        <ContactInfo
+                            text={'ul. Zbożowa 14, 62-800 Kalisz'}
+                            icon={faMapMarkerAlt}
+                        />
+                        <ContactInfo text={'603 934 559'} icon={faPhone} />
+                        <ContactInfo text={'ztsdaga@op.pl'} icon={faAt} />
+                    </Grid>
+                </MaxWidth>
+            </Background>
+        </>
+    );
+};
+
+const Grid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+`;
 
 const Background = styled.div`
-    margin-top: 2rem;
     background-color: ${({ theme }) => theme.colors.secondary};
     padding: 2rem 0;
     color: ${({ theme }) => theme.colors.background};
@@ -15,29 +68,5 @@ const Text = styled.h2`
     margin-bottom: 3rem;
     color: ${({ theme }) => theme.colors.background};
 `;
-const BottomBar = styled.div`
-    width: 100%;
-    height: 1rem;
-    background-color: ${({ theme }) => theme.colors.primary};
-`;
-
-const Molecules: React.FC = () => {
-    return (
-        <>
-            <Background id="kontakt">
-                <MaxWidth>
-                    <Heading>Kontakt</Heading>
-                    <Text>Masz pytania? Skontaktuj się z nami!</Text>
-                    <Paragraph black>Sławomir Kucharski DAGA</Paragraph>
-                    <Paragraph black>ul. Zbożowa 14</Paragraph>
-                    <Paragraph black>62-800 Kalisz</Paragraph>
-                    <Paragraph black>tel. 603 934 559</Paragraph>
-                    <Paragraph black>email: ztsdaga@op.pl</Paragraph>
-                </MaxWidth>
-            </Background>
-            <BottomBar />
-        </>
-    );
-};
 
 export default Molecules;
