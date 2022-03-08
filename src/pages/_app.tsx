@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app';
 import Script from 'next/script';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Theme from '../utils/theme';
+import theme from '../utils/theme/theme';
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -11,9 +12,14 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     -webkit-font-smoothing: antialiased;
-    background-color: ${({ theme }) => theme.colors.background};
-    font-family: ${({ theme }) => theme.fonts.family.body};
+    background-color: ${theme.colors.background};
+    font-family: ${theme.fonts.family.body};
     font-weight: 400;
+  }
+
+  @font-face{
+    font-family: 'Azonix';
+    src: url("fonts/Azonix.otf")
   }
 `;
 
