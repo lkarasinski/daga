@@ -48,6 +48,7 @@ export default class MyDocument extends Document {
                         href="https://fonts.googleapis.com"
                     />
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
+                    <link rel="shortcut icon" href="/icon.png" />
                     <link
                         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;600;700&display=swap"
                         rel="stylesheet"
