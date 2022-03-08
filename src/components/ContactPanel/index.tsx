@@ -14,22 +14,6 @@ import Image from 'next/image';
 const Molecules: React.FC = () => {
     return (
         <>
-            <div
-                style={{
-                    width: '100%',
-                    height: '20vh',
-                    position: 'relative',
-
-                    marginTop: '100px',
-                }}
-            >
-                <Image
-                    src="/pasek.jpg"
-                    alt="Dekoracja"
-                    layout="fill"
-                    objectFit="cover"
-                />
-            </div>
             <Background id="kontakt">
                 <MaxWidth>
                     <Heading>Kontakt</Heading>
@@ -48,9 +32,23 @@ const Molecules: React.FC = () => {
                     </Grid>
                 </MaxWidth>
             </Background>
+            <StyledImageBarContainer>
+                <Image
+                    src="/pasek.jpg"
+                    alt="Dekoracja"
+                    layout="fill"
+                    objectFit="cover"
+                />
+            </StyledImageBarContainer>
         </>
     );
 };
+
+const StyledImageBarContainer = styled.div`
+    width: 100%;
+    height: 20vh;
+    position: relative;
+`;
 
 const Grid = styled.div`
     display: grid;
@@ -62,6 +60,7 @@ const Background = styled.div`
     background-color: ${({ theme }) => theme.colors.secondary};
     padding: 2rem 0;
     color: ${({ theme }) => theme.colors.background};
+    margin-top: 150px;
 `;
 
 const Text = styled.h2`

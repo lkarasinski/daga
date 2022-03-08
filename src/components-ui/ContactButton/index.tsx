@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.button`
-    background: ${({ theme }) => theme.colors.primary};
+    background: #333333;
     font-family: ${({ theme }) => theme.fonts.family.body};
     font-style: normal;
     border: none;
     font-weight: bold;
     font-size: ${({ theme }) => theme.fonts.sizes.small};
     color: ${({ theme }) => theme.colors.background};
-    border: 2px solid ${({ theme }) => theme.colors.background};
+    border: none;
     padding: 0.75rem 2rem;
     cursor: pointer;
 `;

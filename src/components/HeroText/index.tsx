@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 const CompanyName = styled.h1`
     font-family: 'Azonix';
     font-size: ${({ theme }) => theme.fonts.sizes.large};
-    /* color: hsla(40, 100%, 45%, 1); */
+    font-weight: 400;
     @media (max-width: 75rem) {
         font-size: 3rem;
     }
