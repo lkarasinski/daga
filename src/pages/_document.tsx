@@ -40,9 +40,9 @@ export default class MyDocument extends Document {
 
     render(): ReactElement {
         return (
-            <Html lang="en">
+            <Html lang="pl">
                 <Head>
-                    <meta lang="en"></meta>
+                    <meta lang="pl"></meta>
                     <link
                         rel="preconnect"
                         href="https://fonts.googleapis.com"
